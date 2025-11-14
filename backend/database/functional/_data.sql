@@ -1,0 +1,2 @@
+-- Seed data for the [functional] schema.
+-- This file can be used to populate initial business data for testing or demonstration.
