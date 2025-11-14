@@ -28,4 +28,9 @@ export const config = {
       trustServerCertificate: process.env.NODE_ENV !== 'production',
     },
   },
+  jwt: {
+    secret: process.env.JWT_SECRET || 'a-very-strong-secret-key-that-should-be-in-env',
+    expiresIn: process.env.JWT_EXPIRES_IN || '2h',
+    rememberMeExpiresIn: process.env.JWT_REMEMBER_ME_EXPIRES_IN || '30d',
+  },
 };
